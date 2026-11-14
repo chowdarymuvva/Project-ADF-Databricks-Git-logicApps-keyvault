@@ -1,0 +1,10 @@
+{
+	"name": "adf_keyvault_access",
+	"properties": {
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://kvltcaresynckeyvault.vault.azure.net/"
+		}
+	}
+}
