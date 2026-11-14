@@ -51,8 +51,8 @@
 						"referenceName": "DS_ADLS_paruet",
 						"type": "DatasetReference",
 						"parameters": {
-							"Container": "Landing",
-							"Folder": "Test"
+							"Container": "landing",
+							"Folder": "test"
 						}
 					}
 				]
