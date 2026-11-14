@@ -1,0 +1,10 @@
+{
+	"name": "LS_ADLS_SystemAssignedManagedIdentity",
+	"properties": {
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://caresynstoageaccount.dfs.core.windows.net/"
+		}
+	}
+}
