@@ -1,0 +1,15 @@
+{
+	"name": "ADFcaresynce",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "uaenorth",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "0c49cf85-b736-4ba7-9c83-005487c7a9f5",
+		"tenantId": "cb419003-fdc0-42d9-820d-19da9e4a1489"
+	}
+}
