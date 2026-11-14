@@ -21,7 +21,7 @@
 				],
 				"policy": {
 					"timeout": "0.12:00:00",
-					"retry": 0,
+					"retry": 2,
 					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
 					"secureInput": false
@@ -31,7 +31,7 @@
 					"source": {
 						"type": "PostgreSqlV2Source",
 						"query": {
-							"value": "select * from public.@{activity('read table details').output.firstRow.source_table_name}",
+							"value": "select * from PUBLIC.@{activity('read table details').output.firstRow.source_table_name}",
 							"type": "Expression"
 						},
 						"queryTimeout": "02:00:00"
@@ -68,7 +68,7 @@
 						"parameters": {
 							"Container": "landing",
 							"Folder": {
-								"value": "@concat(\n    activity('read table details').output.firstRow.source_sytem_name,'/',activity('read table details').output.firstRow.source_table_name,'/',variables('start_time')\n)",
+								"value": "@concat(\n    activity('read table details').output.firstRow.source_system,'/',activity('read table details').output.firstRow.source_table_name,'/',variables('start_time')\n)",
 								"type": "Expression"
 							}
 						}
@@ -81,7 +81,7 @@
 				"dependsOn": [],
 				"policy": {
 					"timeout": "0.12:00:00",
-					"retry": 0,
+					"retry": 2,
 					"retryIntervalInSeconds": 30,
 					"secureOutput": false,
 					"secureInput": false
@@ -123,7 +123,8 @@
 		],
 		"parameters": {
 			"table_id": {
-				"type": "string"
+				"type": "string",
+				"defaultValue": "1"
 			}
 		},
 		"variables": {
