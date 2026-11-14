@@ -1,0 +1,23 @@
+{
+	"name": "azuresql_casesync",
+	"properties": {
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "caresyyncsqlserver.database.windows.net",
+			"database": "caresync",
+			"encrypt": "mandatory",
+			"trustServerCertificate": false,
+			"authenticationType": "SQL",
+			"userName": "serveradmin",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "adf_keyvault_access",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "azuresqldbpassword"
+			}
+		}
+	}
+}
