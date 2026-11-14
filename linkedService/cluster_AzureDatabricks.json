@@ -12,7 +12,8 @@
 					"type": "LinkedServiceReference"
 				},
 				"secretName": "azure-databrics-token"
-			}
+			},
+			"existingClusterId": "1114-132445-1z9f4zot"
 		}
 	},
 	"type": "Microsoft.DataFactory/factories/linkedservices"
