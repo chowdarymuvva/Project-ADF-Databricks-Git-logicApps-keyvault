@@ -1,0 +1,12 @@
+{
+	"name": "metadata_sql_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "azuresql_casesync",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": []
+	}
+}
